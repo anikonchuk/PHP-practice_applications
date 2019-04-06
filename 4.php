@@ -6,15 +6,15 @@
 	<aside class="col-xs-4">
 
 		<?php Navigation();?>
-			
-		
+
+
 	</aside><!--SIDEBAR-->
 
 
 <article class="main-content col-xs-8">
 
-	
-	<?php  
+
+	<?php
 
 /*  Step1: Define a function and make it return a calculation of 2 numbers
 
@@ -23,7 +23,22 @@
 
  */
 
-	
+	function calculation(){
+		$number1 = 20;
+		$number2 = 50;
+		$sum = $number1 + $number2;
+		return $sum;
+	}
+
+	$the_sum = calculation();
+	echo $the_sum;
+	echo "<br />";
+
+	function sayHola($hello) {
+		echo $hello;
+	}
+	hola('Hey is that Spanish?');
+
 ?>
 
 
