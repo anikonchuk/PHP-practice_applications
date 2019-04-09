@@ -6,16 +6,16 @@
 		<aside class="col-xs-4">
 
 		<?php Navigation();?>
-			
-			
+
+
 		</aside><!--SIDEBAR-->
 
 
-		
+
 	<article class="main-content col-xs-8">
-	
-	
-	<?php  
+
+
+	<?php
 
 	/*  Step 1 -Make a variable with some text as value
 
@@ -26,7 +26,15 @@
 		Step 4 - echo the variable
 
 	*/
-	
+
+	$password = "Hello World";
+	$hash_format = "$2y$10$";
+	$salt = "arandomsetofcharacters";
+	$hash_and_salt = $hash_format . $salt;
+	$encrypted_password = crypt($password, $hash_and_salt);
+	echo $encrypted_password;
+
+
 	?>
 
 
